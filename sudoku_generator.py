@@ -1,5 +1,6 @@
 import math,random
 
+
 """
 This was adapted from a GeeksforGeeks article "Program for Sudoku Generator" by Aarti_Rathi and Ankur Trisal
 https://www.geeksforgeeks.org/program-sudoku-generator/
@@ -22,7 +23,12 @@ class SudokuGenerator:
 	Return:
 	None
     '''
-    def __init__(self, row_length, removed_cells):
+
+    def __init__(self, row_length = 9, removed_cells = int):
+        self.row_length = row_length
+        self.removed_cells = removed_cells
+        self.board = [[0 for _ in range(row_length)] for _ in range(row_length)]
+        self.box_length = math.sqrt(row_length)
         pass
 
     '''
