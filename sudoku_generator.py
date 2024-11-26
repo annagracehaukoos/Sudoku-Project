@@ -1,6 +1,5 @@
 import math,random
 
-
 """
 This was adapted from a GeeksforGeeks article "Program for Sudoku Generator" by Aarti_Rathi and Ankur Trisal
 https://www.geeksforgeeks.org/program-sudoku-generator/
@@ -29,7 +28,6 @@ class SudokuGenerator:
         self.removed_cells = removed_cells
         self.board = [[0 for _ in range(row_length)] for _ in range(row_length)]
         self.box_length = math.sqrt(row_length)
-        pass
 
     '''
 	Returns a 2D python list of numbers which represents the board
@@ -38,7 +36,7 @@ class SudokuGenerator:
 	Return: list[list]
     '''
     def get_board(self):
-        pass
+        return self.board
 
     '''
 	Displays the board to the console
@@ -48,7 +46,9 @@ class SudokuGenerator:
 	Return: None
     '''
     def print_board(self):
-        pass
+        for row in self.board:
+            for col in row:
+                print(col, end= " ")
 
     '''
 	Determines if num is contained in the specified row (horizontal) of the board
@@ -61,6 +61,7 @@ class SudokuGenerator:
 	Return: boolean
     '''
     def valid_in_row(self, row, num):
+        
         pass
 
     '''
